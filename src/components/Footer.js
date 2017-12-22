@@ -5,7 +5,7 @@ class Footer extends React.Component {
       return (
         <div className="footer">
           <p className="footer__copyright">&copy; David Holloway</p>
-          <ul className="footer__icons">
+          <ul className="footer__social">
             <li className="footer__icon footer__icon--github">Github</li>
             <li className="footer__icon footer__icon--linkedin">LinkedIn</li>
             <li className="footer__icon footer__icon--codepen">Codepen</li>
