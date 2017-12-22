@@ -5,8 +5,8 @@ class Nav extends React.Component {
       return (
                     
         <nav className="nav" role="navigation">
-            <a className="nav__link" href="/contact">Resume</a>
             <a className="nav__link" href="/about">About</a>
+            <a className="nav__link" href="/about">Writing</a>
             <a className="nav__link" href="/contact">Contact</a>
         </nav>    
 
