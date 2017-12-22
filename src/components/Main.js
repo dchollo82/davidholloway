@@ -5,7 +5,7 @@ import Portfolio from './Portfolio';
 
 const Main = (props) => {
   return (
-    <div className="maincontent">
+    <div>
       <About /> 
       <Skills /> 
       <Portfolio />   
