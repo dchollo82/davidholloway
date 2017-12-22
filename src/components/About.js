@@ -5,8 +5,9 @@ class About extends React.Component {
       return (
         <section className="about">
             <div className="about__intro">
-                <p className="about__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique faucibus gravida.</p>
-                <p className="about__desc">Fusce porttitor metus ut erat posuere volutpat. Pellentesque feugiat odio condimentum volutpat convallis. Proin porta euismod eros id tempor. Mauris mauris arcu, volutpat ac bibendum a, sollicitudin quis sapien. Integer dictum elit quis sapien bibendum, sed varius diam maximus. Donec varius convallis felis sit amet mattis. Suspendisse sit amet tellus nec libero tristique fermentum et eget orci.</p>
+                <p className="about__lead">After 3 highly enjoyable and challening years at Tesco, I’m ready for my next challenge.</p>
+                <p className="about__desc">The work I enjoy the most is when I’m working in team that enables me to collaborate closely with design and UX to create better, usable technology.</p>
+                <p className="about__desc">I have been designing and building web applications professionally for the past 10 years. I’d like to contribute  my Design, UX and UI Development skills to a product team that is passionate about diversity and inclusion.</p>
             </div>
         </section>         
       )
