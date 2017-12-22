@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from './Intro';
+import Logo from './Logo';
 import Nav from './Nav';
 import Avatar from './Avatar';
 
@@ -7,8 +7,8 @@ class Header extends React.Component {
     render() {
       return (
         <div>
-            <Intro />        
-            <Nav />
+            <Logo />                                    
+            <Nav />  
             <Avatar />
         </div>
                 
