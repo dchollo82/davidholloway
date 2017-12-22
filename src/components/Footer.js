@@ -5,13 +5,13 @@ class Footer extends React.Component {
       return (
         <div className="footer">
           <p className="footer__copyright">&copy; David Holloway</p>
-          <ul className="footer__social">
-            <li className="footer__icon footer__icon--github">Github</li>
-            <li className="footer__icon footer__icon--linkedin">LinkedIn</li>
-            <li className="footer__icon footer__icon--codepen">Codepen</li>
-            <li className="footer__icon footer__icon--twitter">Twitter</li>
-            <li className="footer__icon footer__icon--instagram">Instagram</li>
-          </ul>
+          <div className="footer__social">
+            <a href="#" className="footer__icon footer__icon--github">Github</a>
+            <a href="#" className="footer__icon footer__icon--linkedin">LinkedIn</a>
+            <a href="#" className="footer__icon footer__icon--codepen">Codepen</a>
+            <a href="#" className="footer__icon footer__icon--twitter">Twitter</a>
+            <a href="#" className="footer__icon footer__icon--instagram">Instagram</a>
+          </div>
         </div>
       )
     }
