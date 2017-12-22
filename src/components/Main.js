@@ -6,7 +6,7 @@ import Portfolio from './Portfolio';
 const Main = (props) => {
   return (
     <div>
-      <About /> 
+      <About />  
       <Skills /> 
       <Portfolio />   
     </div>
