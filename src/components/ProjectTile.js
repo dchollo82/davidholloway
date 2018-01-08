@@ -5,7 +5,7 @@ import React from 'react';
 
       <a className="portfolio__item" href="{props.url}">
         <h3 className="portfolio__title">{props.title}</h3>
-        <small className="portfolio__role">{props.role}</small>
+        <small className="portfolio__role">{props.jobrole}</small>
       </a>
       
     )

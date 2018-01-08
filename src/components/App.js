@@ -17,7 +17,7 @@ class App extends React.Component {
         <main role="main">
           <Main /> 
         </main>
-        <footer role="footer">       
+        <footer>       
           <Footer /> 
         </footer>
       </div>
