@@ -1,0 +1,44 @@
+// https://fonts.google.com/specimen/PT+Sans?selection.family=PT+Sans
+$font-reg = pt-sans-regular
+$font-bold = pt-sans-bold
+$font-boldItalic = pt-sans-boldItalic
+$font-italic = pt-sans-italic
+
+@font-face {
+    font-family: $font-reg
+    src: url(fonts/PT_Sans-Web-Regular.ttf);
+    font-weight:600;
+}
+@font-face {
+    font-family: $font-bold
+    src: url(fonts/PT_Sans-Web-Bold.ttf);
+    font-weight:700;
+}
+@font-face {
+    font-family: $font-boldItalic
+    src: url(fonts/PT_Sans-Web-BoldItalic.ttf);
+    font-weight:700;
+}
+@font-face {
+    font-family: $font-italic
+    src: url(fonts/PT_Sans-Web-Italic.ttf);
+    font-weight:400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-reg;
+}
+
+/* 1rem(16px) @ 20rem(320px) increasing to 3rem(48px) @ 120rem(1920px) */
+@media (min-width: 20em) {
+  :root {
+    font-size: calc(1rem + ((1vw - 0.2rem) * 2));
+    /* Where: * 2 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 120em) {
+  :root {
+    font-size: 3rem;
+  }
+}
