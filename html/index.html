@@ -8,95 +8,123 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/css/style.css">
 
   </head>
   <body>
-    
-    <div id="main">
-        <div className="container">
+        <a class="skip" href="#content">Skip to main content</a>
+        <div class="container">
             <header role="banner">
                 <h1>
                     <a href="/" rel="home">
                         <picture>
-                        <!-- <source srcset="" type="image/svg+xml"></source> -->
-                        <img src="cog.svg" alt="logo"></img>
-                        </picture>
+                            <source srcset="images/cog.svg" type="image/svg+xml"></source>
+                            <img src="images/cog.svg" alt="logo"></img>
+                        </picture>                        
+                        <span>David <br /> Holloway</span>                       
                     </a>
                 </h1>
-                <nav className="nav" role="navigation">
-                    <a className="nav__link" href="/about">About</a>
-                    <a className="nav__link" href="/about">Writing</a>
-                    <a className="nav__link" href="/contact">Contact</a>
+                <nav class="nav" role="navigation">
+                    <a class="nav__link" href="#Tesco Direct Inspire Me Templatesabout">About</a>
+                    <a class="nav__link" href="#portfolio">Portfolio</a>
+                    <a class="nav__link" href="/blog">Blog</a>
+                    <a class="nav__link" href="/contact">Contact</a>
                 </nav>
-                <div className="avatar">
-                    <img className="avatar__img" src="http://via.placeholder.com/1034x1034" alt="A  of David Holloway" />
-                </div>
             </header>
-            <main role="main">
-                <div className="intro">
-                    <h1 className="intro__heading">Hi, there</h1>            
-                    <div className="intro__desc">
-                        <p className="intro__tagline">I'm David Holloway. A UI Developer from London, UK.</p>
-                        <p className="intro__copy">I'm Passionate about delightful, usable experiences made possible by great reusable and scalable code.</p>                
+            <main role="main" id="content">                
+                <div class="intro" id="about">
+                    <h1 class="intro__heading">Hi there.</h1>
+                    <div class="intro">
+                        <img class="intro__img" src="http://via.placeholder.com/1034x1034" alt="A picture of David Holloway" />
+                    </div>      
+                    <div class="intro__desc">
+                        <p class="intro__tagline">I'm David Holloway. A UI Developer from London, UK.</p>
+                        <p class="intro__copy">I'm Passionate about delightful, usable experiences made possible by great reusable and scalable code.</p>                
                     </div>                     
                 </div>
-                <section className="about">
-                    <div className="about__intro">
-                        <p className="about__lead">After 3 highly enjoyable and challening years at Tesco, I’m ready for my next challenge.</p>
-                        <p className="about__desc">The work I enjoy the most is when I’m working in team that enables me to collaborate closely with design and UX to create better, usable technology.</p>
-                        <p className="about__desc">I have been designing and building web applications professionally for the past 10 years. I’d like to contribute  my Design, UX and UI Development skills to a product team that is passionate about diversity and inclusion.</p>
+                <section class="about">
+                    <div class="about__intro">
+                        <p class="about__lead">I currently work for Tesco and always on the look out for new opportunities and challenges.</p>
+                        <p class="about__desc">The work I enjoy the most is when I’m working in team that enables me to collaborate closely with design and UX to create better, usable technology.</p>
+                        <p class="about__desc">I have been designing and building web applications professionally for the past 10 years. I’d like to contribute my Design, UX and UI Development skills to a product team that is passionate about diversity and inclusion.</p>
                     </div>
                 </section>
-                <section className="skills">
-                    <ul className="skills__list">
-                        <li className="skill__item">User Experience</li>
-                        <li className="skill__item">HTML5</li>
-                        <li className="skill__item">CSS3</li>
-                        <li className="skill__item">SCSS</li>
-                        <li className="skill__item">BEM</li>
-                        <li className="skill__item">React</li>
-                        <li className="skill__item">Javascript</li>
-                        <li className="skill__item">jQuery</li>
-                        <li className="skill__item">GIT</li>
-                        <li className="skill__item">Command Line</li>
-                        <li className="skill__item">Sketch</li>
-                        <li className="skill__item">Photoshop</li>
-                        <li className="skill__item">Accessibility</li>                                
+                <section class="skills">
+                    <ul class="skills__list">
+                        <li class="skill__item">User Experience</li>
+                        <li class="skill__item">HTML5</li>
+                        <li class="skill__item">CSS3</li>
+                        <li class="skill__item">SCSS</li>
+                        <li class="skill__item">BEM</li>
+                        <li class="skill__item">React</li>
+                        <li class="skill__item">Javascript</li>
+                        <li class="skill__item">jQuery</li>
+                        <li class="skill__item">GIT</li>
+                        <li class="skill__item">Command Line</li>
+                        <li class="skill__item">Sketch</li>
+                        <li class="skill__item">Photoshop</li>
+                        <li class="skill__item">Accessibility</li>                                
                     </ul>
                 </section>
-                <section className="portfolio">
-                    <h2 className="portfolio__header">Portfolio</h2>
-                    <div className="portfolio__wrapper">
-                        <a className="portfolio__item" href="#">
-                            <h3 className="portfolio__title">Title</h3>
-                            <small className="portfolio__role">Job role</small>
+                <section class="portfolio" id="portfolio">
+                    <h2 class="portfolio__header">Portfolio</h2>
+                    <div class="portfolio__wrapper">
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Tesco Direct Inspire Me Templates</h3>
+                            <small class="portfolio__role">UI Developer</small>
                         </a>
-                        <a className="portfolio__item" href="#">
-                            <h3 className="portfolio__title">Title</h3>
-                            <small className="portfolio__role">Job role</small>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Tesco Direct Convergence</h3>
+                            <small class="portfolio__role">Developer</small>
                         </a>
-                        <a className="portfolio__item" href="#">
-                            <h3 className="portfolio__title">Title</h3>
-                            <small className="portfolio__role">Job role</small>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Southgate Cycling Club</h3>
+                            <small class="portfolio__role">Designer &amp; UI Developer</small>
+                        </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Tesco F&amp;F Inspire Me</h3>
+                            <small class="portfolio__role">UI Developer</small>
+                        </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Citi Rewards</h3>
+                            <small class="portfolio__role">UI Developer</small>
+                        </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Joe Rodgers Sports Therapy</h3>
+                            <small class="portfolio__role">Designer &amp; UI Developer</small>
+                        </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Virgin Media</h3>
+                            <small class="portfolio__role">UI Developer</small>
+                        </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Holiday Extras</h3>
+                            <small class="portfolio__role">UI Developer</small>
+                            </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">New Love Club</h3>
+                            <small class="portfolio__role">Designer &amp; UI Develope</small>
+                        </a>
+                        <a class="portfolio__item" href="#">
+                            <h3 class="portfolio__title">Champion Print</h3>
+                            <small class="portfolio__role">Designer &amp; UI Developer</small>
                         </a>
                     </div>
                 </section> 
             </main>
             <footer>       
-                <div className="footer">
-                    <p className="footer__copyright">&copy; David Holloway</p>
-                    <div className="footer__social">
-                        <a href="#" className="footer__icon footer__icon--github">Github</a>
-                        <a href="#" className="footer__icon footer__icon--linkedin">LinkedIn</a>
-                        <a href="#" className="footer__icon footer__icon--codepen">Codepen</a>
-                        <a href="#" className="footer__icon footer__icon--twitter">Twitter</a>
-                        <a href="#" className="footer__icon footer__icon--instagram">Instagram</a>
+                <div class="footer">
+                    <p class="footer__copyright">&copy; David Holloway</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__icon footer__icon--github">Github</a>
+                        <a href="#" class="footer__icon footer__icon--linkedin">LinkedIn</a>
+                        <a href="#" class="footer__icon footer__icon--codepen">Codepen</a>
+                        <a href="#" class="footer__icon footer__icon--twitter">Twitter</a>
+                        <a href="#" class="footer__icon footer__icon--instagram">Instagram</a>
                     </div>
                 </div> 
-            </footer>
+            </footer>        
         </div>
-    </div>
 
     <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
