@@ -192,22 +192,22 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: pt-sans-regular;
-  src: url("fonts/PT_Sans-Web-Regular.ttf");
+  src: url("../fonts/PT_Sans-Web-Regular.ttf");
   font-weight: 600;
 }
 @font-face {
   font-family: pt-sans-bold;
-  src: url("fonts/PT_Sans-Web-Bold.ttf");
+  src: url("../fonts/PT_Sans-Web-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: pt-sans-boldItalic;
-  src: url("fonts/PT_Sans-Web-BoldItalic.ttf");
+  src: url("../fonts/PT_Sans-Web-BoldItalic.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: pt-sans-italic;
-  src: url("fonts/PT_Sans-Web-Italic.ttf");
+  src: url("../fonts/PT_Sans-Web-Italic.ttf");
   font-weight: 400;
 }
 h1,
