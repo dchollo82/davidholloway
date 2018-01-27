@@ -228,19 +228,46 @@ body {
 img {
   max-width: 100%;
 }
-.head {
+.skip {
+  border: none;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+header {
   padding: calc(0.5rem + 1vh) calc(0.25em + 5vw);
 }
 .head__wrap {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 .head__title {
-  font-weight: bold;
+  font-family: pt-sans-bold;
   text-transform: uppercase;
-  display: block;
+  font-size: 1.2rem;
+  line-height: 1em;
+  padding-top: calc(0.1rem + 1vh);
 }
 .head__img {
-  width: 50px;
-  margin-right: 1em;
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.nav__item {
+  list-style-type: none;
+  margin: 0 0.7em;
+}
+.nav__item:first-child {
+  margin-left: 0;
+}
+.nav__link {
+  text-decoration: none;
 }
