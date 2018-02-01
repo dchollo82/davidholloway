@@ -1,3 +1,41 @@
+@media (min-width: 20em) {
+  :root {
+    font-size: calc(1rem + ((1vw - 0.2rem) * 2));
+/* Where: * 2 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+@media (min-width: 120em) {
+  :root {
+    font-size: 3rem;
+  }
+}
+@font-face {
+  font-family: pt-sans-regular;
+  src: url("../fonts/PT_Sans-Web-Regular.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: pt-sans-bold;
+  src: url("../fonts/PT_Sans-Web-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: pt-sans-boldItalic;
+  src: url("../fonts/PT_Sans-Web-BoldItalic.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: pt-sans-italic;
+  src: url("../fonts/PT_Sans-Web-Italic.ttf");
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: pt-sans-regular;
+}
 article,
 aside,
 details,
@@ -176,44 +214,6 @@ h1 {
 a {
   color: #303030;
 }
-@media (min-width: 20em) {
-  :root {
-    font-size: calc(1rem + ((1vw - 0.2rem) * 2));
-/* Where: * 2 = 100 * font_Size_Difference / viewport_Width_Difference */
-  }
-}
-@media (min-width: 120em) {
-  :root {
-    font-size: 3rem;
-  }
-}
-@font-face {
-  font-family: pt-sans-regular;
-  src: url("../fonts/PT_Sans-Web-Regular.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: pt-sans-bold;
-  src: url("../fonts/PT_Sans-Web-Bold.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: pt-sans-boldItalic;
-  src: url("../fonts/PT_Sans-Web-BoldItalic.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: pt-sans-italic;
-  src: url("../fonts/PT_Sans-Web-Italic.ttf");
-  font-weight: 400;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: pt-sans-regular;
-}
 html {
   font-size: 62.5%;
 }
@@ -224,6 +224,7 @@ body {
   font-smooth: antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
 }
 img {
   max-width: 100%;
@@ -235,6 +236,14 @@ img {
   overflow: hidden;
   position: absolute;
   width: 0;
+}
+.about {
+  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+.footer {
+  text-align: center;
 }
 header {
   padding: calc(0.5rem + 1vh) calc(0.25em + 5vw);
@@ -270,4 +279,44 @@ header {
 }
 .nav__link {
   text-decoration: none;
+}
+.intro {
+  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  text-align: center;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.intro__heading {
+  margin: 0.5em 0;
+  text-align: center;
+  font-family: pt-sans-bold;
+}
+.intro__desc {
+  font-family: pt-sans-bold;
+}
+.portfolio {
+  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  border-bottom: 1px solid #eaeaea;
+}
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__item {
+  border: 1px solid rgba(0,0,0,0.8);
+  text-align: center;
+  background: #eee;
+  text-decoration: none;
+}
+.portfolio__role {
+  display: none;
+}
+.skills {
+  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  border-bottom: 1px solid #eaeaea;
+}
+.skills__item {
+  list-style: none;
+  display: inline;
+  padding-right: 1em;
 }
