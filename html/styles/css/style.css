@@ -238,8 +238,7 @@ img {
   width: 0;
 }
 .about {
-  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
-  text-align: center;
+  padding: calc(1em + 2vh) calc(1rem + 2vw);
   border-bottom: 1px solid #eaeaea;
 }
 .footer {
@@ -268,7 +267,7 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 0;
+  padding: 0.5em 0 0;
 }
 .nav__item {
   list-style-type: none;
@@ -281,7 +280,7 @@ header {
   text-decoration: none;
 }
 .intro {
-  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  padding: calc(1em + 2vh) calc(1rem + 2vw);
   text-align: center;
   font-size: 1.1rem;
   border-bottom: 1px solid #eaeaea;
@@ -295,28 +294,36 @@ header {
   font-family: pt-sans-bold;
 }
 .portfolio {
-  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
   border-bottom: 1px solid #eaeaea;
+  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  text-align: center;
 }
 .portfolio__container {
   display: flex;
   flex-direction: column;
 }
 .portfolio__item {
-  border: 1px solid rgba(0,0,0,0.8);
-  text-align: center;
   background: #eee;
+  border: 1px solid rgba(0,0,0,0.8);
+  border-radius: 3px;
   text-decoration: none;
+  margin: 10px 0 40px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio__role {
   display: none;
 }
 .skills {
-  padding: calc(1em + 2vh) calc(0.5rem + 2vw);
+  padding: calc(1em + 2vh) calc(1rem + 2vw);
   border-bottom: 1px solid #eaeaea;
+}
+.skills__list {
+  padding: 0;
 }
 .skills__item {
   list-style: none;
-  display: inline;
-  padding-right: 1em;
+  padding-bottom: 0.5em;
 }
