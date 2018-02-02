@@ -243,6 +243,10 @@ img {
 }
 .footer {
   text-align: center;
+  padding: calc(1em + 2vh) calc(1rem + 2vw);
+}
+.footer__icon {
+  text-decoration: none;
 }
 header {
   padding: calc(0.5rem + 1vh) calc(0.25em + 5vw);

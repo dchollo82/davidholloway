@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>In</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile-Portrait" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-51.000000, -2604.000000)">
+        <g id="Footer" transform="translate(51.000000, 2558.000000)" fill="#444444">
+            <path d="M24,69.985 L20.685,69.985 L20.685,64.797 C20.685,63.56 20.663,61.969 18.962,61.969 C17.237,61.969 16.974,63.317 16.974,64.709 L16.974,69.985 L13.662,69.985 L13.662,59.317 L16.84,59.317 L16.84,60.776 L16.886,60.776 C17.328,59.937 18.41,59.052 20.023,59.052 C23.38,59.052 24,61.261 24,64.134 L24,69.985 Z M9.924,57.86 C8.859,57.86 8,56.998 8,55.937 C8,54.876 8.859,54.014 9.924,54.014 C10.984,54.014 11.845,54.876 11.845,55.937 C11.845,56.998 10.984,57.86 9.924,57.86 L9.924,57.86 Z M11.582,69.985 L8.263,69.985 L8.263,59.317 L11.582,59.317 L11.582,69.985 Z M16,46 C7.163,46 0,53.163 0,62 C0,70.836 7.163,78 16,78 C24.837,78 32,70.836 32,62 C32,53.163 24.837,46 16,46 L16,46 Z" id="In"></path>
+        </g>
+    </g>
+</svg>
