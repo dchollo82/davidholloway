@@ -11,4 +11,7 @@ Inspiration
 https://ethanmarcotte.com/
 http://nicoledominguez.com/
 
+Icons
+https://github.com/edent/SuperTinyIcons
+
 

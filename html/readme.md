@@ -8,6 +8,7 @@ https://reactjs.org/docs/components-and-props.html
 https://courses.wesbos.com/account/access/58c123bfa811657a91a60f3c
 
 Stylus
+cd /Users/David/Dropbox/Web\ Development/Projects/Github/davidholloway/html/styles 
 https://sabe.io/tutorials/setting-up-stylus-css-preprocessor
 Watch and compile
 stylus -w style.styl -o css/
