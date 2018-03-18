@@ -1,15 +1,19 @@
-/* 1rem(16px) @ 20rem(320px) increasing to 3rem(48px) @ 120rem(1920px) */
-@media (min-width: 20em) {
+/* 16px @ 320px increasing to 24px @ 1280px */
+@media (min-width: 320px) {
   :root {
-    font-size: calc(1rem + ((1vw - 0.2rem) * 2));
-    /* Where: * 2 = 100 * font_Size_Difference / viewport_Width_Difference */
+    font-size: calc(1rem + ((1vw - 3.2px) * 0.8333));
+    /* Where: * 0.8333 = 100 * font_Size_Difference / viewport_Width_Difference */
   }
 }
 /* Prevent font scaling beyond this breakpoint */
-@media (min-width: 120em) {
+@media (min-width: 1280px) {
   :root {
-    font-size: 3rem;           
+    font-size: 24px;
   }
+}
+
+p {
+    // font-size: 1rem;
 }
 
 @font-face {

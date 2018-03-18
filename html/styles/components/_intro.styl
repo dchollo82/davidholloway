@@ -1,7 +1,7 @@
 .intro {
     padding: calc( 1em + 2vh) calc( 1rem + 2vw);
     text-align: center;
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
     border-bottom: 1px solid #EAEAEA;
     &__heading {
         margin: 0.5em 0;
@@ -11,4 +11,11 @@
     &__desc {
         font-family: $font-bold;
     }
+}
+
+@media (min-width: 768px) {
+    .intro   {
+        display: flex;
+    }
+   
 }
