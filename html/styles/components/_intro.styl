@@ -1,66 +1,64 @@
-.intro {
-    display: -ms-grid;
-    display: grid;
-     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 10px 15px;
-    padding: calc( 1em + 2vh) calc( 1rem + 2vw);
-    text-align: center;
-    border-bottom: 1px solid #EAEAEA;
-    &__heading {
-        margin: 0.5em 0;
-        text-align: center;
-        font-family: $font-bold;
-    }
-    &__tagline {
-        font-family: $font-bold;
-        margin-top: 0;
-    }
-    
-}
-@media (min-width: 21em) { 
-    .intro {
-        &__tagline {
-            font-size: 1.2rem;
-        }
-    }
-}
-@media (min-width: 39em) and (max-width: 63em) { 
-    .intro {
-        &__tagline {
-            font-size: 1.4rem;
-        }
-        &__copy {
-            font-size: 1.2rem;
-        }  
-    }
-}
-@media (min-width: 63em) {
-    .intro   {        
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        &__desc {
-            padding: 0 calc(1rem + 1vw);
-        }
-        &__about {
-            grid-column: 1 / span 2;
-        }
-    }
-}
-@media (min-width: 63em) { 
-    .intro {
-        &__tagline {
-            font-size: 1.2rem;
-        }
-    }
-}
-@media (min-width: 78.75em) {
-    .intro  {        
-        &__tagline {
-            font-size: 1.4rem;
-        }
-        &__copy {
-            font-size: 1.2rem;
-        }    
-    }   
-}
+.intro 
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: 1fr
+    grid-template-columns: 1fr
+    grid-gap: 1em
+    padding: calc( 1em + 2vh) calc( 1rem + 2vw)
+    text-align: center
+    border-bottom: 1px solid #EAEAEA
+    &__heading 
+        margin: 0.5em 0
+        text-align: center
+        font-family: $font-bold
+    &__tagline 
+        font-family: $font-bold
+        margin-top: 0
+ 
+@media (min-width: 21em)  
+    .intro 
+        &__tagline 
+            font-size: 1.2rem
+
+@media (min-width: 39em) and (max-width: 63em) 
+    .intro 
+        &__tagline 
+            font-size: 1.4rem
+        &__copy 
+            font-size: 1.2rem
+
+// layout changes to rows and columns
+@media (min-width: 63em) 
+    .intro           
+        -ms-grid-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, 1fr)
+        -ms-grid-rows: 0.1fr 2fr 1fr
+        grid-template-rows: 0.1fr 1fr 0.1fr
+        &__heading 
+            grid-column: 1/span 4
+            // grid-row: 1 / 2;
+        &__img 
+            grid-column: 1/span 2
+            // grid-row: 2 / 2;
+        &__desc 
+            grid-column: 3/span 2;           
+            // grid-row: 2 / 2;
+            padding: 0 calc(1rem + 1vw)
+        &__about 
+            grid-column: 1/span 4
+            grid-row: 3 / 3
+
+@media (min-width: 63em) 
+    .intro 
+        &__tagline 
+            font-size: 1.2rem
+
+@media (min-width: 78em) 
+    .intro          
+        &__tagline 
+            font-size: 1.4rem
+        
+        &__copy 
+            font-size: 1.2rem
+
+

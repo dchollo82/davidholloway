@@ -1,41 +1,32 @@
-.portfolio {    
-    border-bottom: 1px solid #EAEAEA;
-    padding: calc(1em + 2vh) calc(0.5rem + 2vw);
-    text-align: center;
-    &__container {
-        display: -ms-grid;
-        display: grid;
-        grid-gap: 10px 15px;
-    }
-    &__item {
-        background: #eee;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        border-radius: 3px; 
-        text-decoration: none;
-        padding: calc(1em + 2vh) calc(0.5rem + 2vw);
-        transition: background 0.4s ease-in;
-        &:hover {
-            background: #c0c0c0;
-        }  
-    }
-    &__title {
-        margin: 0;
-    }
-    &__role {
-        display: none;
-    }
-}
+.portfolio   
+    border-bottom: 1px solid #EAEAEA
+    padding: calc(1em + 2vh) calc(0.5rem + 2vw)
+    text-align: center
+    &__container 
+        display: -ms-grid
+        display: grid
+        grid-gap: 10px 15px    
+    &__item 
+        background: #eee
+        border: 1px solid rgba(0, 0, 0, 0.8)
+        border-radius: 3px
+        text-decoration: none
+        padding: calc(1em + 2vh) calc(0.5rem + 2vw)
+        transition: background 0.4s ease-in
+        &:hover 
+            background: #c0c0c0
+    &__title 
+        margin: 0        
+    &__role 
+        display: none
 
-@media (min-width: 48em) {
-    .portfolio {
-        &__container {
-            -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-        }
-        &__item {
-        }
-        &__role {
+
+@media (min-width: 48em) 
+    .portfolio 
+        &__container 
+            -ms-grid-columns: 1fr 1fr
+            grid-template-columns: 1fr 1fr
+        &__item 
+        &__role 
             display: block;
-        }
-    }
-}
+        
