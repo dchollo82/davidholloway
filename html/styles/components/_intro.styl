@@ -11,9 +11,11 @@
         margin: 0.5em 0
         text-align: center
         font-family: $font-bold
-    &__tagline 
-        font-family: $font-bold
-        margin-top: 0
+    &__desc
+        &__tagline 
+            font-family: $font-bold
+            margin-top: 0
+    
  
 @media (min-width: 21em)  
     .intro 
@@ -36,17 +38,13 @@
         grid-template-rows: 0.1fr 1fr 0.1fr
         &__heading 
             grid-column: 1/span 4
-            // grid-row: 1 / 2;
         &__img 
             grid-column: 1/span 2
-            // grid-row: 2 / 2;
         &__desc 
             grid-column: 3/span 2;           
-            // grid-row: 2 / 2;
             padding: 0 calc(1rem + 1vw)
         &__about 
             grid-column: 1/span 4
-            grid-row: 3 / 3
 
 @media (min-width: 63em) 
     .intro 
