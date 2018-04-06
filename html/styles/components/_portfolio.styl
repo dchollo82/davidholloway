@@ -5,23 +5,24 @@
     &__container 
         display: -ms-grid
         display: grid
-        grid-gap: 10px 15px    
+        grid-gap: 20px    
     &__item 
-        background-color: $rgba-primary-2
-        background-size: cover;
-        border: 1px solid rgba(0, 0, 0, 0.8)
+        background-color: $rgba-hover-2
+        background-size: cover
+        background-position: center
         border-radius: 3px
+        display: flex
+        height: calc(1em + 14vh)
+        justify-content: center
+        align-items: center
         text-decoration: none
-        padding: calc(1em + 2vh) calc(0.5rem + 2vw)
         position: relative
-        height: 160px
         &::before 
-            background-color: rgba(79, 98, 142,0.8)
+            background-color: $rgba-hover-2
             transition: background-color ease-in .1s
             position: absolute
             border-radius: 3px
             cursor: pointer
-            height: 160px
             z-index: 300
             display: block
             content: ""
@@ -30,12 +31,13 @@
             left: 0
             top: 0
         &:hover::before 
-            background-color: $rgba-primary-1
+            background-color: $rgba-hover-1
         &:hover 
-            border-color: $rgba-primary-1
+            border-color: $rgba-hover-1
     &__title 
         color: white
         font-size: 1.2rem
+        font-family: $font-bold
         position: relative
         margin: 0   
         z-index: 500
@@ -48,7 +50,6 @@
         &__container 
             -ms-grid-columns: 1fr 1fr
             grid-template-columns: 1fr 1fr
-        &__item 
         &__role 
             display: block;
         
