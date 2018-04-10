@@ -5,10 +5,9 @@ body
     -o-font-smoothing: antialiased   
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale;
-
-img 
-    max-width: 100%
-
+    background: white
+    color: bodyfont;
+    border-top: 10px solid moduleborder
 .skip 
     border: none
     display: block
@@ -16,3 +15,19 @@ img
     overflow: hidden
     position: absolute
     width: 0
+::-moz-selection
+    background-color: $rgba-primary-2
+    color: white
+::selection 
+    background-color: $rgba-primary-2
+    color: white
+h1 
+    margin: 0
+a 
+    color: modulefont
+img 
+    max-width: 100%
+
+h1, h2, h3, h4, h5, p, li 
+    color: #4d4d4d
+

@@ -1,5 +1,6 @@
 header 
     padding: calc(0.5rem + 1vh) calc(0.25em + 5vw)
+    background: modulebg
 .head 
     &__wrap 
          display: flex
@@ -11,10 +12,12 @@ header
             font-size: 1.2rem
             line-height: 1em
             padding-top: calc(0.1rem + 1vh)
+            color: $rgba-primary-3 
         &__img 
             width: 1.5em
             margin-right: 0.5em
             transition: 0.5s
+            fill: $rgba-primary-3 
             &:hover {
                 fill: $rgba-primary-1
             }
@@ -30,12 +33,13 @@ header
         &:first-child 
             margin-left: 0
     &__link 
-        color: #000000
+        color: #4d4d4d
+        font-family: $font-bold
         text-decoration: none        
         padding-bottom: 0.2em
         position: relative
         &:hover {
-            color: #000000
+            color: $color-primary-3
         }
         &:before {
             content: ""
@@ -44,7 +48,7 @@ header
             height: 2px
             bottom: 0
             left: 0
-            background-color: #000
+            background-color: $color-primary-3
             visibility: hidden
             -webkit-transform: scaleX(0)
             transform: scaleX(0)

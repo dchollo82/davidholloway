@@ -201,29 +201,15 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 body {
-  background: #fff;
-  color: bodyfont;
-  border-top: 10px solid #666;
-}
-header {
-  background: #eee;
-}
-h1 {
-  margin: 0;
-}
-a {
-  color: #303030;
-}
-body {
   font-smooth: antialiased;
   font-family: pt-sans-regular;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-img {
-  max-width: 100%;
+  background: #fff;
+  color: bodyfont;
+  border-top: 10px solid #666;
 }
 .skip {
   border: none;
@@ -232,6 +218,32 @@ img {
   overflow: hidden;
   position: absolute;
   width: 0;
+}
+::-moz-selection {
+  background-color: #4f628e;
+  color: #fff;
+}
+::selection {
+  background-color: #4f628e;
+  color: #fff;
+}
+h1 {
+  margin: 0;
+}
+a {
+  color: #303030;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  color: #4d4d4d;
 }
 .footer {
   text-align: center;
@@ -268,6 +280,7 @@ img {
 }
 header {
   padding: calc(0.5rem + 1vh) calc(0.25em + 5vw);
+  background: #eee;
 }
 .head__wrap {
   display: flex;
@@ -280,11 +293,13 @@ header {
   font-size: 1.2rem;
   line-height: 1em;
   padding-top: calc(0.1rem + 1vh);
+  color: #162955;
 }
 .head__img {
   width: 1.5em;
   margin-right: 0.5em;
   transition: 0.5s;
+  fill: #162955;
 }
 .head__img:hover {
   fill: #7887ab;
@@ -303,13 +318,14 @@ header {
   margin-left: 0;
 }
 .nav__link {
-  color: #000;
+  color: #4d4d4d;
+  font-family: pt-sans-bold;
   text-decoration: none;
   padding-bottom: 0.2em;
   position: relative;
 }
 .nav__link:hover {
-  color: #000;
+  color: #162955;
 }
 .nav__link:before {
   content: "";
@@ -318,7 +334,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #162955;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -345,7 +361,8 @@ header {
   text-align: center;
   font-family: pt-sans-bold;
 }
-.intro__desc__tagline {
+.intro__desc,
+.intro__tagline {
   font-family: pt-sans-bold;
   margin-top: 0;
 }
@@ -412,7 +429,7 @@ header {
   background-position: center;
   border-radius: 3px;
   display: flex;
-  height: calc(1em + 14vh);
+  height: 160px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -453,6 +470,9 @@ header {
   .portfolio__container {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .portfolio__item {
+    height: 300px;
   }
   .portfolio__role {
     display: block;
