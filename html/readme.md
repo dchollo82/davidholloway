@@ -22,6 +22,9 @@ http://nicoledominguez.com/
 Hugo site generator
 https://gohugo.io/
 
+Colour Pallette
+http://paletton.com/#uid=13L0u0kllllaFw0g0qFqFg0w0aF
+
 
 
 
